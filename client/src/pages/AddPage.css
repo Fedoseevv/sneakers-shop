@@ -1,0 +1,16 @@
+.btn_add {
+    font-family: 'Bebas Neue'!important;
+    
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:burlywood
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:burlywood
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:burlywood
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:burlywood
+}

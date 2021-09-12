@@ -1,0 +1,53 @@
+{
+	"sneakers": [
+		{
+			"title": "sneakers adidas x lego® superstar",
+			"price": 7999,
+			"url": "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/02603c86d62344c7bbdaace900ba559c_9366/Krossovki_adidas_x_LEGO(r)_Superstar_belyj_FZ8497_01_standard.jpg",
+			"brand": "Adidas",
+			"id": 1,
+            "sizes": [39, 40, 41, 42],
+            "descr": "Add the unique adidas x LEGO® Superstar to your sneaker collection. This adidas / LEGO Group collaboration version features iconic adidas Superstar graphics, Shell Toe, Shamrock and Serrated Three Stripes. She even has real laces. The construction set comes in a special box, similar to the usual one, but with LEGO parts. But the fun part is 17 additional LEGO elements with which you can change and customize your sneakers."
+		},
+		{
+			"title": "sneakers adidas forum low",
+			"price": 6999,
+			"url": "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/f64a0e3176364556aa83ad220006023a_9366/Krossovki_Forum_Low_belyj_GZ9112_01_standard.jpg",
+			"brand": "Adidas",
+			"id": 2,
+            "sizes": [40, 41, 42],
+            "descr": "Add the unique adidas x LEGO® Superstar to your sneaker collection. This adidas / LEGO Group collaboration version features iconic adidas Superstar graphics, Shell Toe, Shamrock and Serrated Three Stripes. She even has real laces. The construction set comes in a special box, similar to the usual one, but with LEGO parts. But the fun part is 17 additional LEGO elements with which you can change and customize your sneakers."
+
+		},
+		{
+			"title": "sneakers vans sk8-mid",
+			"price": 7440,
+			"url": "https://sneakerhead.ru/upload/resize_cache/iblock/17d/582_874_1/17d12d43bae2dbd2ac9e2528fd1fcba6.jpg",
+			"brand": "Vans",
+			"id": 3,
+            "sizes": [39, 40, 42],
+            "descr": "Add the unique adidas x LEGO® Superstar to your sneaker collection. This adidas / LEGO Group collaboration version features iconic adidas Superstar graphics, Shell Toe, Shamrock and Serrated Three Stripes. She even has real laces. The construction set comes in a special box, similar to the usual one, but with LEGO parts. But the fun part is 17 additional LEGO elements with which you can change and customize your sneakers."
+
+		},
+		{
+			"title": "sneakers new balance 530",
+			"price": 9990,
+			"url": "https://sneakerhead.ru/upload/resize_cache/iblock/39f/582_874_1/39f103f0b92730afcfd08246fe5c0988.jpg",
+			"brand": "NewBalance",
+			"id": 4,
+            "sizes": [39, 40, 41, 42],
+            "descr": "Add the unique adidas x LEGO® Superstar to your sneaker collection. This adidas / LEGO Group collaboration version features iconic adidas Superstar graphics, Shell Toe, Shamrock and Serrated Three Stripes. She even has real laces. The construction set comes in a special box, similar to the usual one, but with LEGO parts. But the fun part is 17 additional LEGO elements with which you can change and customize your sneakers."
+
+		},
+		{
+			"title": "sneakers nike air max 90",
+			"price": 12790,
+			"url": "https://sneakerhead.ru/upload/resize_cache/iblock/e65/582_874_1/e6530160e6ae329a84b075046e576f7a.jpg",
+			"brand": "Nike",
+			"id": 5,
+            "sizes": [39, 40, 41, 42, 43, 44, 45],
+            "descr": "Add the unique adidas x LEGO® Superstar to your sneaker collection. This adidas / LEGO Group collaboration version features iconic adidas Superstar graphics, Shell Toe, Shamrock and Serrated Three Stripes. She even has real laces. The construction set comes in a special box, similar to the usual one, but with LEGO parts. But the fun part is 17 additional LEGO elements with which you can change and customize your sneakers."
+
+		}
+	]
+}

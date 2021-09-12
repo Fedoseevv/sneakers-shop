@@ -1,0 +1,49 @@
+.sneaker_logo {
+    width: 70px;
+    margin-left: 40px;
+    margin-top: 20px; /* Для карточек */
+    display: inline-block;
+    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+  }
+  .sneaker_logo:hover {
+    -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+      cursor: pointer;
+  }
+  .header_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+    background-color: rgba(0,0,0, .5); /* Для карточек */
+    opacity: 0.5; /* Для карточек */
+    max-height: 100px; /* Для карточек */
+
+  }
+  .link_container {
+    height: 105px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px; /* Для карточек, было 20 или 30 */
+    
+  }
+  .link_item {
+    font-family: 'Bebas Neue';
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: #ffffff;
+    display: block;
+    margin-right: 30px;
+    transition: 0.5s;
+    text-align: center;
+    text-decoration: none;
+  }
+  .link_item:hover {
+    color:fuchsia;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,160 @@
+.content_wrap {
+    margin: 40px;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: flex-start;
+    color: white;
+}
+.img_side {
+    display: block;
+    margin-top: 10px;
+    max-height: 500px;
+    min-width: 500px;
+    overflow: hidden;
+}
+.cart_photo {
+    width: 500px;
+}
+.descr_side {
+    display: block;
+    margin-left: 50px;
+    
+}
+.descr_text {
+    font-weight:300;
+    font-size: 20px;
+}
+.item_title {
+    font-size: 50px;
+}
+.item_price {
+    font-size: 45px;
+}
+
+.item_in_stoke__wrap {
+    width: 140px;
+    margin-top: 10px;
+    background-color: transparent;
+    color: green;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 5px;
+    border: 3px solid rgb(109, 12, 101);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.icon_stock {
+    display: block;
+    margin-right: 10px;
+}
+.item_in_stoke__text {
+    display: block;
+}
+
+.item_size__wrap {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+.custom-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  /* для элемента label связанного с .custom-radio */
+  .custom-radio+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    margin-right: 25px;
+  }
+
+  /* создание в label псевдоэлемента  before со следующими стилями */
+  .custom-radio+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+
+  /* стили при наведении курсора на радио */
+  .custom-radio:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #b3d7ff;
+  }
+
+  /* стили для активной радиокнопки (при нажатии на неё) */
+  .custom-radio:not(:disabled):active+label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+  }
+
+  /* стили для радиокнопки, находящейся в фокусе */
+  .custom-radio:focus+label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+  .custom-radio:focus:not(:checked)+label::before {
+    border-color: #80bdff;
+  }
+
+  /* стили для радиокнопки, находящейся в состоянии checked */
+  .custom-radio:checked+label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  }
+
+  /* стили для радиокнопки, находящейся в состоянии disabled */
+  .custom-radio:disabled+label::before {
+    background-color: #e9ecef;
+  }
+
+
+  .add_to__cart {
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #f1f36a;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-family: 'Bebas Neue';
+    text-align: center;
+    position: absolute;
+    transition: 0.5s;
+    
+  }
+  .add_to__cart:hover{
+    background-color:violet;
+    cursor: pointer;
+    
+  }
+  .add_to__cart:active {
+    background:slateblue;
+    margin-top: 30px;
+    margin-left: 15px;
+    box-shadow: none;
+  }
+  .add_to_cart_text {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #0a0a0a;
+    transition: 0.3s;
+  }

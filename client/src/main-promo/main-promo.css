@@ -1,0 +1,139 @@
+.main_promo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+  .sneakers_promo {
+    background: transparent;
+    width: 400px;
+    display: block;
+    z-index: 5;
+    margin-right: 130px;
+  }
+  .shining_promo {
+    width: 430px;
+    margin-top: 30px;
+    margin-left: 140px;
+    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    transition: width 4s, height 4s, background-color 4s, transform 4s;
+  
+  }
+  .shining_promo:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  
+  }
+  
+  .shining_container {
+    position: relative;
+    text-align: center;
+  }
+  .first_word {
+    font-family: 'Bebas Neue';
+    position: absolute;
+    font-size: 180px;
+    line-height: 350px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #0a0a0a;
+    margin-left: -310px;
+    margin-top: 0;
+    
+    /* Чтобы нельзя было выделять текст */
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+  }
+  .second_word {
+    position: absolute;
+    /* border: 4px solid #0a0a0a; */
+    font-family: 'Bebas Neue';
+    font-size: 120px;
+    line-height: 600px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    /* color: #ffffff; */
+    color: #0a0a0a;
+    margin-left: -310px;
+    margin-top: 0;
+
+    /* Чтобы нельзя было выделять текст */
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .shop_now {
+    width: 200px;
+    height: 50px;
+    background-color: #f1f36a;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-family: 'Bebas Neue';
+    text-align: center;
+    margin-left: -312px;
+    margin-top: 353px;
+    position: absolute;
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  .shop_now:hover{
+    background-color:violet;
+    cursor: pointer;
+    
+  }
+  .shop_now:active {
+    background:slateblue;
+    margin-top: 356px;
+    margin-left: -307px;
+    box-shadow: none;
+  }
+  .shop_now__text {
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #0a0a0a;
+    transition: 0.3s;
+    
+  }
+  .shop_now__text:hover {
+    font-size: 25px;
+  }
+  
+  .rect_style {
+    width: 200px;
+    height: 280px;
+    background-color: rgba(47,47,47,0.0);
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    margin-top: 10%;
+    margin-right: -150px;
+    z-index: 2;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+  }
+  .rect_text {
+    font-family: 'Bebas Neue';
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+    color: #0a0a0a;
+    position: absolute;
+    margin-left: -73px;
+    margin-top: 50px;
+    transition: 0.5s;
+  }
+  .rect_text:hover {
+    color: #f1f36a;
+    cursor: pointer;
+  }
