@@ -8,7 +8,7 @@ import logo from './sneaker-logo.svg';
 
 const AppHeader = (props) => {
     const auth = useContext(AuthContext)
-    const {isAuth, role} = props; // Авторизован пользователь или нет
+    const {isAuth, role} = props; 
     const history = useHistory()
     const logoutHandler = (event) => {
       event.preventDefault();

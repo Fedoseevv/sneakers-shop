@@ -2,9 +2,9 @@ const {Schema, model} = require('mongoose')
 
 const sneaker = new Schema({
     title: {
-        type: String, // Тип поля
-        required: true, // Поле необходимое
-        unique: true // Поле должно быть уникальным
+        type: String, 
+        required: true, 
+        unique: true 
     },
     price: {
         type: Number,

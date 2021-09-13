@@ -28,22 +28,6 @@ export const CartList = ({ sneakers, total }) => {
     return (
         <>
             <div className="content_wrap">
-                {/* <div className="form_side">
-                    <form class="decor">
-                        <div class="form-left-decoration"></div>
-                        <div class="form-right-decoration"></div>
-                        <div class="circle"></div>
-                        <div class="form-inner">
-                        <h3>Place your order</h3>
-                        <input type="text" placeholder="Full name"/>
-                        <input type="email" placeholder="E-mail"/>
-                        <input type="phone" placeholder="Phone number"/>
-                        <textarea placeholder="Comment" rows="3"></textarea>
-                        <input className="send_button"type="submit" value="Send"/>
-                        </div>
-                    </form>
-                </div> */}
-
                 <div className="shop_list_side">
                     {
                         sneakersCart.map(item => {

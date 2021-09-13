@@ -30,7 +30,7 @@ const schema = new Schema({
                 },
                 sneakerId: {
                     type: Schema.Types.ObjectId,
-                    ref: 'Sneaker', // Связываем с моделью кроссовок === стер в конце s
+                    ref: 'Sneaker', 
                     required: true
                 }
             } 
@@ -38,8 +38,6 @@ const schema = new Schema({
     }
 })
 
-// Доблавляем метод, выносим логику в объект пользователя
-// Используем ключевое слово function чтобы не потерять контекст вызова
 schema.methods.addToCart = function(sneaker, size) {
     const clonedItems = [...this.cart.items];
     const idx = clonedItems.findIndex(c => {

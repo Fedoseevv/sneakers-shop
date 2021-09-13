@@ -38,7 +38,6 @@ const RegisterPage = () => {
     const loginHandler = async () => {
         try {
             const data = await request('/api/user/login', 'POST', {...form})
-            // console.log(data)
             auth.login(data.token, data.userId, data.role)
             console.log('Data', data)
         } catch(e) {}

@@ -3,8 +3,6 @@ import React, { useCallback, useContext, useEffect, useState } from 'react'
 import { AuthContext } from '../authContext/authContext'
 import { useHttp } from '../hooks/http.hook'
 import Spinner from '../spinner'
-// import {SneakersList} from '../sneakersList/sneakersList'
-// import {CartList} from '../cartList/cartList'
 import { Link } from 'react-router-dom'
 
 
@@ -53,7 +51,7 @@ const CartPage = () => {
 
     return (
         <>
-                        <div className="content_wrap">
+            <div className="content_wrap">
 
                 <div className="shop_list_side">
                     {

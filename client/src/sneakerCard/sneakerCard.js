@@ -39,10 +39,6 @@ export const SneakerCard = ({sneaker}) => {
                     <div className="descr_text">
                         {descr}
                     </div>
-                    {/* <div className="item_in_stoke__wrap">
-                        <i class="fas fa-check-square icon_stock"></i>
-                        <div className="item_in_stoke__text">in stock</div>
-                    </div> */}
 
                     <div className="item_size__wrap">
                         {

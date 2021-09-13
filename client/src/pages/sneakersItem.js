@@ -5,8 +5,6 @@ import { useHttp } from '../hooks/http.hook'
 import { SneakerCard } from '../sneakerCard/sneakerCard'
 import Spinner from '../spinner'
 
-// import './itemPage.css'
-
 export const SneakersItem = () => {
     const {token} = useContext(AuthContext)
     const {request, loading} = useHttp()

@@ -15,6 +15,5 @@ export default class ErrorBoundary extends Component {
             return <Error/>
         }
         return this.props.children;
-
     }
 }

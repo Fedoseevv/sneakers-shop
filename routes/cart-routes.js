@@ -1,6 +1,5 @@
 const {Router} = require('express')
 const Sneaker = require('../models/Sneaker')
-// const config = require('config')
 const authMiddleware = require('../middleware/auth-middleware')
 const User = require('../models/User')
 
@@ -9,7 +8,6 @@ const router = new Router()
 
 function mapCartItems(cart) {
     return cart.items.map(item => ({
-        // Исбавляемся от метадаты
         ...item.sneakerId._doc, 
         id: item.sneakerId.id,
         count: item.count,
@@ -28,7 +26,7 @@ router.post('/', async(req, res) => {
         const {id} = req.body
 
         const user = await User.findById(id)
-        .populate('cart.items.sneakerId') // В поле sneakerId  хранится вся информация о кроссовках
+        .populate('cart.items.sneakerId') 
         const sneakers = mapCartItems(user.cart);
         const totalPrice = computePrice(sneakers)
 
@@ -41,9 +39,8 @@ router.post('/', async(req, res) => {
 
 router.post('/add', authMiddleware, async (req, res) => {
     try {
-        const userId = req.body.userId // Получаем с клиента id пользователя
-        const user = await User.findById(userId)// Находим пользователя в БД
-        console.log(`from server: ${req.body.size}`)
+        const userId = req.body.userId 
+        const user = await User.findById(userId)
         const sneaker = await Sneaker.findById(req.body.sneakerId);
         await user.addToCart(sneaker, req.body.size);
     } catch(e) {

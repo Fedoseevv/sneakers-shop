@@ -118,3 +118,7 @@
     .radio {
       margin-bottom: 0.4em;
     }
+    .custom_panel__wrap {
+      display: flex;
+      justify-content: space-between;
+    }

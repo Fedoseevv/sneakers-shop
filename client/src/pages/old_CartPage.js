@@ -1,8 +1,4 @@
 import './cartPage.css'
-import AppHeader from '../app-header'
-import test_sneakers from '../sneakers-item/test_sneakers.jpg'
-import {connect} from 'react-redux'
-import {deleteFromCart} from '../actions'
 
 const CartPage = ({items, deleteFromCart, sizeCart, totalPrice}) => {
     return (
@@ -58,17 +54,4 @@ const CartPage = ({items, deleteFromCart, sizeCart, totalPrice}) => {
     )
 }
 
-const mapStateToProps = (state) => {
-    return {
-        items: state.items,
-        sizeCart: state.sizeCart,
-        totalPrice: state.totalPrice
-        
-    }
-}
-const mapDispatchToProps = {
-    deleteFromCart,
-    
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(CartPage);
+export default CartPage;

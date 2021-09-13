@@ -7,13 +7,11 @@ const config = require('config')
 const router = Router()
 const User = require('../models/User')
 
-// Метод для проверки авторизованности
 router.get('/auth', async (req, res) => {
     res.json({message: 'Пользователь авторизован'})
 });
 
 
-// /api/user/registration
 router.post('/registration', 
     [
         check('email', 'Некорректный email').isEmail(),
@@ -22,15 +20,15 @@ router.post('/registration',
     async (req, res) => {
     try {
 
-        const errors = validationResult(req) // Валидируем входящие поля
-        if (!errors.isEmpty()) { // Если есть ошибки, то возвращаем их на фронт
+        const errors = validationResult(req) 
+        if (!errors.isEmpty()) { 
             return res.status(400).json({
-                errors: errors.array(), // возвращаем массив ошибок
+                errors: errors.array(),
                 message: 'Некорректные данные при регистрации'
             })
         }
 
-        const {email, password} = req.body; // Получаем с front-end'a два поля
+        const {email, password} = req.body; 
         const candidate = await User.findOne({email})
         if (candidate) {
             return res.status(400).json({message: 'Такой пользователь уже существует'})
@@ -40,7 +38,7 @@ router.post('/registration',
         const user = new User({email, password: hashedPassword})
         await user.save()
 
-        res.status(201).json({message: 'Пользователь успешно создан!'}) // 201 - статус, когда что-то создается
+        res.status(201).json({message: 'Пользователь успешно создан!'}) 
 
 
 
@@ -49,20 +47,19 @@ router.post('/registration',
     }
 })
 
-// /api/auth
+
 router.post(
     '/login', 
     [
         check('email', 'Введите корректный email').isEmail(),
-        check('password', 'Введите пароль').exists() // То есть пароль просто должен существовать
+        check('password', 'Введите пароль').exists() 
     ],
     async (req, res) => {
     try {
-        const errors = validationResult(req) // Валидируем входящие поля
-        // console.log(errors)
-        if (!errors.isEmpty()) { // Если есть ошибки, то возвращаем их на фронт
+        const errors = validationResult(req) 
+        if (!errors.isEmpty()) { 
             return res.status(400).json({
-                errors: errors.array(), // возвращаем массив ошибок
+                errors: errors.array(),
                 message: 'Некорректные данные при входе'
             })
         }
@@ -73,18 +70,18 @@ router.post(
         console.log(user.role)
         
 
-        if (!user) { // Пользователь не найден
+        if (!user) { 
             return res.status(400).json({message: 'Пользователь не найден'})
         }
         const isMatch = await bcrypt.compare(password, user.password)
-        if (!isMatch) {// Пароли не совпадают
+        if (!isMatch) {
             return res.status(400).json({message: 'Неверный пароль, попробуйте снова'})
         }
 
         const token = jwt.sign(
-            { userId: user.id, role: user.role }, // Данные, которые надо шифровать
-            config.get('jwtSecret'), // Передаем секретный ключ
-            { expiresIn: '1h' } // Через сколько данный jwt токен закончит свое существование
+            { userId: user.id, role: user.role }, 
+            config.get('jwtSecret'), 
+            { expiresIn: '1h' } 
         )
             console.log(`before send res: ${user.role}`)
         res.json({token, userId: user.id, role: user.role})
